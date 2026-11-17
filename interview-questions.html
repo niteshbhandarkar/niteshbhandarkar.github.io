@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intune & SCCM Interview Questions</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+    background:#f5f7fa;
+    line-height:1.6;
+}
+
+h1{
+    color:#0078D4;
+    text-align:center;
+}
+
+.question{
+    background:#fff;
+    border-left:5px solid #0078D4;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.question h3{
+    margin-top:0;
+    color:#0078D4;
+}
+
+.answer{
+    color:#333;
+}
+
+a{
+    color:#0078D4;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎯 Microsoft Intune & SCCM Interview Questions</h1>
+
+<div class="question">
+<h3>1. What is Microsoft Intune?</h3>
+<div class="answer">
+Microsoft Intune is a cloud-based Endpoint Management solution used to manage devices, deploy applications, enforce security policies, and ensure compliance across Windows, macOS, iOS, and Android devices.
+</div>
+</div>
+
+<div class="question">
+<h3>2. What is SCCM (MECM)?</h3>
+<div class="answer">
+Microsoft Endpoint Configuration Manager (formerly SCCM) is an on-premises endpoint management solution used for software deployment, patch management, operating system deployment, inventory management, and compliance monitoring.
+</div>
+</div>
+
+<div class="question">
+<h3>3. Difference Between Intune and SCCM?</h3>
+<div class="answer">
+<b>Intune</b> is cloud-based and focused on modern management.<br>
+<b>SCCM</b> is traditionally on-premises and focused on enterprise device management.<br>
+Today, many organizations use both together through Co-Management.
+</div>
+</div>
+
+<div class="question">
+<h3>4. What is Device Enrollment in Intune?</h3>
+<div class="answer">
+Device Enrollment is the process of registering a device with Microsoft Intune so administrators can deploy applications, policies, and security settings.
+</div>
+</div>
+
+<div class="question">
+<h3>5. What is a Compliance Policy?</h3>
+<div class="answer">
+A Compliance Policy checks whether a device meets organizational security requirements such as password, encryption, antivirus, and OS version.
+</div>
+</div>
+
+<div class="question">
+<h3>6. What is a Configuration Profile?</h3>
+<div class="answer">
+Configuration Profiles are used to deploy settings such as Wi-Fi, VPN, Email, BitLocker, and Security configurations to managed devices.
+</div>
+</div>
+
+<div class="question">
+<h3>7. What is Windows Autopilot?</h3>
+<div class="answer">
+Windows Autopilot is a cloud-based deployment technology that automatically configures new Windows devices without manual IT setup.
+</div>
+</div>
+
+<div class="question">
+<h3>8. What is Co-Management?</h3>
+<div class="answer">
+Co-Management allows a Windows device to be managed by both SCCM and Intune simultaneously. Organizations use it for gradual cloud adoption.
+</div>
+</div>
+
+<div class="question">
+<h3>9. What is Tenant Attach?</h3>
+<div class="answer">
+Tenant Attach connects SCCM-managed devices to the Microsoft Intune portal, enabling cloud visibility without fully enabling Co-Management.
+</div>
+</div>
+
+<div class="question">
+<h3>10. What is Cloud Attach?</h3>
+<div class="answer">
+Cloud Attach is a combination of Tenant Attach and Co-Management that connects SCCM with Microsoft Intune for modern endpoint management.
+</div>
+</div>
+
+<div class="question">
+<h3>11. What is Conditional Access?</h3>
+<div class="answer">
+Conditional Access is a security feature in Microsoft Entra ID that grants or blocks access to applications based on identity, device compliance, location, and risk.
+</div>
+</div>
+
+<div class="question">
+<h3>12. What are Update Rings?</h3>
+<div class="answer">
+Update Rings control how Windows Updates are deployed to devices, including deferrals, deadlines, installation schedules, and restart behavior.
+</div>
+</div>
+
+<div class="question">
+<h3>13. What is Application Deployment?</h3>
+<div class="answer">
+Application Deployment is the process of distributing software packages such as Office 365, Adobe Reader, Zoom, or Chrome to managed devices.
+</div>
+</div>
+
+<div class="question">
+<h3>14. What is a Collection in SCCM?</h3>
+<div class="answer">
+A Collection is a logical group of devices or users used to target software deployments, updates, and configurations.
+</div>
+</div>
+
+<div class="question">
+<h3>15. What is a Boundary Group?</h3>
+<div class="answer">
+Boundary Groups define network locations and help devices locate Distribution Points and SCCM services.
+</div>
+</div>
+
+<div class="question">
+<h3>16. What is a Distribution Point (DP)?</h3>
+<div class="answer">
+A Distribution Point stores software content and makes it available to SCCM clients during software deployment.
+</div>
+</div>
+
+<div class="question">
+<h3>17. What is Software Center?</h3>
+<div class="answer">
+Software Center is the SCCM client portal where users can install approved software, view deployments, and monitor installation status.
+</div>
+</div>
+
+<div class="question">
+<h3>18. How does SCCM Patch Management work?</h3>
+<div class="answer">
+Updates are synchronized from Microsoft Update, deployed to Distribution Points, targeted to Collections, and then installed by SCCM clients.
+</div>
+</div>
+
+<div class="question">
+<h3>19. What is BitLocker Policy in Intune?</h3>
+<div class="answer">
+BitLocker policies enforce drive encryption to protect company data on managed Windows devices.
+</div>
+</div>
+
+<div class="question">
+<h3>20. Explain a Real-World Troubleshooting Scenario.</h3>
+<div class="answer">
+If Outlook is not working:
+<ul>
+<li>Check Intune enrollment status</li>
+<li>Verify device compliance</li>
+<li>Force device sync</li>
+<li>Verify policy deployment</li>
+<li>Check Conditional Access policies</li>
+<li>Review Microsoft 365 licensing</li>
+</ul>
+</div>
+</div>
+
+<hr>
+
+<h2>⭐ Interview Golden Rule</h2>
+
+<p>
+<b>Intune = Cloud Management</b><br>
+<b>SCCM = On-Premises Device Management</b><br>
+<b>Co-Management = Intune + SCCM Together</b>
+</p>
+
+<p>
+<a href="index.html">⬅ Back to Home</a>
+</p>
+
+</body>
+</html>
