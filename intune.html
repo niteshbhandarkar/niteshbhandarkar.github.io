@@ -1,19 +1,214 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Intune Notes</title>
+    <title>Microsoft Intune Notes</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f5f7fa;
+        }
+
+        h1,h2,h3{
+            color: #0078D4;
+        }
+
+        .card{
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        table{
+            width:100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border:1px solid #ccc;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:left;
+        }
+
+        a{
+            color:#0078D4;
+            text-decoration:none;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Microsoft Intune Notes</h1>
+<h1>📘 Microsoft Intune & SCCM Notes</h1>
 
-<h2>Windows Autopilot</h2>
+<div class="card">
+    <h2>Recommended Learning Path</h2>
+
+    <h3>Phase 1: SCCM Fundamentals</h3>
+    <ul>
+        <li>SCCM Architecture</li>
+        <li>Sites and Site Systems</li>
+        <li>Boundaries & Boundary Groups</li>
+        <li>Collections</li>
+        <li>SCCM Client Installation</li>
+        <li>Application Deployment</li>
+        <li>Software Updates</li>
+    </ul>
+
+    <h3>Phase 2: Intune Fundamentals</h3>
+    <ul>
+        <li>Intune Architecture</li>
+        <li>Device Enrollment</li>
+        <li>Compliance Policies</li>
+        <li>Configuration Profiles</li>
+        <li>Application Deployment</li>
+        <li>Device Actions</li>
+        <li>Reporting</li>
+    </ul>
+
+    <h3>Phase 3: Advanced Endpoint Management</h3>
+    <ul>
+        <li>Windows Autopilot</li>
+        <li>Co-Management</li>
+        <li>Tenant Attach</li>
+        <li>Cloud Attach</li>
+        <li>Endpoint Security Policies</li>
+        <li>Update Rings</li>
+        <li>Windows 365 & Cloud PC</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>What is Intune?</h2>
+
+    <p>
+        Intune is Microsoft's cloud-based endpoint management platform
+        used to manage devices, applications, security policies and compliance.
+    </p>
+
+    <h3>Key Concepts</h3>
+
+    <ul>
+        <li>Enrollment</li>
+        <li>Compliance Policy</li>
+        <li>Configuration Profile</li>
+        <li>Application Deployment</li>
+        <li>Windows Autopilot</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Intune vs SCCM</h2>
+
+    <table>
+        <tr>
+            <th>SCCM</th>
+            <th>Intune</th>
+        </tr>
+
+        <tr>
+            <td>On-Premises Management</td>
+            <td>Cloud-Based Management</td>
+        </tr>
+
+        <tr>
+            <td>Requires SCCM Infrastructure</td>
+            <td>Managed from Microsoft Cloud</td>
+        </tr>
+
+        <tr>
+            <td>Strong OS Deployment</td>
+            <td>Strong MDM/MAM</td>
+        </tr>
+
+        <tr>
+            <td>Configuration Manager Client</td>
+            <td>MDM Enrollment</td>
+        </tr>
+    </table>
+</div>
+
+<div class="card">
+    <h2>Co-Management</h2>
+
+    <p>
+        Co-management allows a Windows device to be managed by
+        both SCCM and Microsoft Intune simultaneously.
+    </p>
+
+    <h3>Benefits</h3>
+
+    <ul>
+        <li>Gradual Cloud Migration</li>
+        <li>Conditional Access</li>
+        <li>Device Compliance</li>
+        <li>Cloud Visibility</li>
+        <li>Modern Endpoint Management</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Cloud Attach</h2>
+
+    <p>
+        Cloud Attach connects SCCM with Intune and allows
+        organizations to leverage modern cloud-based management.
+    </p>
+
+    <ul>
+        <li>Tenant Attach</li>
+        <li>Co-Management</li>
+        <li>Cloud Visibility</li>
+        <li>Remote Actions</li>
+        <li>Autopilot Integration</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Windows Autopilot</h2>
+
+    <p>
+        Windows Autopilot enables zero-touch deployment of Windows devices.
+        Users can receive a new laptop, sign in with company credentials,
+        and automatically receive company applications and policies.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Interview Questions</h2>
+
+    <h3>What is Intune?</h3>
+    <p>
+        Intune is a cloud-based endpoint management solution.
+    </p>
+
+    <h3>What is SCCM?</h3>
+    <p>
+        SCCM (MECM) is Microsoft's on-premises endpoint management platform.
+    </p>
+
+    <h3>What is Co-Management?</h3>
+    <p>
+        Co-management allows SCCM and Intune to manage the same device.
+    </p>
+
+    <h3>What is Cloud Attach?</h3>
+    <p>
+        Cloud Attach connects SCCM and Intune for modern endpoint management.
+    </p>
+</div>
 
 <p>
-Autopilot helps deploy new Windows devices automatically.
+    <a href="index.html">⬅ Back to Home</a>
 </p>
-
-<a href="index.html">Back to Home</a>
 
 </body>
 </html>
